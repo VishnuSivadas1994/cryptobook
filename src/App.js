@@ -39,8 +39,8 @@ const App = () => {
         </Layout>
         <div className='footer'>
           <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
-            CryptoBook<br />
-          All Rights Reserved
+            CryptoBook by Vishnu Sivadas<br />
+          2021
         </Typography.Title>
           <Space>
             <Link to='/'>Home</Link>
