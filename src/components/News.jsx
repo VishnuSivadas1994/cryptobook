@@ -5,9 +5,12 @@ import moment from 'moment';
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 
+import Loader from './Loader';
 
 const { Text, Title } = Typography;
 const { Option } = Select;
+
+
 
 const demoImageUrl = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 
@@ -18,7 +21,7 @@ const News = ({ simplified }) => {
 
     // console.log(cryptoNews);
 
-    if (!cryptoNews?.value) return 'Loading...';
+    if (!cryptoNews?.value) return <Loader/>;
 
 
     return (

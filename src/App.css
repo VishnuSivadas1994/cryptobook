@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 
 :root{
   --text-primary:#000;
@@ -25,7 +27,7 @@ a:hover{
 
 .navbar{
   flex: 0.2;
-  background-color: rgb(0, 21, 41);
+  background-color: rgb(27, 38, 44);
 }
 
 .main{
@@ -42,11 +44,11 @@ a:hover{
   margin: 10px;
   height: 100vh;
   margin: 0px;
-  background-color: rgb(0, 21, 41);
+  background-color: rgb(27, 38, 44);
 }
 
 .logo-container{
-  background-color: #001529;
+  background-color: rgb(27, 38, 44);
   display: flex;
   padding: 20px;
   align-items: center;
