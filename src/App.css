@@ -8,6 +8,10 @@
  --pink: #0071bd;
  --light-blue: #e6f7ff;
  --border: #d9d9d9;
+ --menu-color:#28527A;
+ --menu-select-color:#8AC4D0;
+ --body-color:#FBEEAC;
+ --footer-color:#F4D160;
 }
 
 * {
@@ -27,7 +31,7 @@ a:hover{
 
 .navbar{
   flex: 0.2;
-  background-color: rgb(27, 38, 44);
+  background-color: var(--menu-color);
 }
 
 .main{
@@ -44,16 +48,37 @@ a:hover{
   margin: 10px;
   height: 100vh;
   margin: 0px;
-  background-color: rgb(27, 38, 44);
+  background-color: var(--menu-color);
 }
 
 .logo-container{
-  background-color: rgb(27, 38, 44);
+  background-color: var(--menu-color);
   display: flex;
   padding: 20px;
   align-items: center;
   width: 100%;
 }
+
+.ant-menu.ant-menu-dark{
+  background-color: var(--menu-color);
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color:var(--menu-select-color);
+}
+.ant-layout{
+  background-color: var(--body-color);
+}
+.ant-card{
+  background-color: rgba(#FFADAD, 1);
+}
+
+
+
+
+
+
+
+
 .logo{
   margin:0 0 0 15px;
 }
@@ -68,6 +93,15 @@ a:hover{
   font-size: 1.2rem !important;
   background-color: var(--bgSecondary) !important;
   border: none !important;
+}
+
+.footlink{
+  color: black;
+  text-decoration: none;
+
+}
+.footlink:hover{
+  text-decoration: none;
 }
 
 .loader{
@@ -373,9 +407,15 @@ width: 70%;
 }
 
 .footer {
-  background-color: #001529;
+  background-color: var(--footer-color);
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
+}
+
+
+.test{
+  color: #EEF5B2;
+
 }

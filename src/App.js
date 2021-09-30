@@ -38,14 +38,13 @@ const App = () => {
           </div>
         </Layout>
         <div className='footer'>
-          <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
+          <Typography.Title level={5} style={{ color: 'black', textAlign: 'center' }}>
             CryptoBook by Vishnu Sivadas<br />
           2021
         </Typography.Title>
           <Space>
-            <Link to='/'>Home</Link>
-            <Link to='/exchanges'>Exchanges</Link>
-            <Link to='/news'>News</Link>
+            <a className='footlink' href="https://www.linkedin.com/in/sivadasv/" target='_blank'>LinkedIn</a>
+            <a className='footlink' href="https://github.com/VishnuSivadas1994" target='_blank'>GitHub</a>
 
           </Space>
         </div>
